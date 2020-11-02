@@ -1,2 +1,0 @@
-# LarpBattleGround
-app for larpers
