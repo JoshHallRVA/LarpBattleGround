@@ -97,6 +97,9 @@ const PlaceItem = props => {
             <Button inverse onClick={openMapHandler}>
               VIEW ON MAP
             </Button>
+            <Button inverse onClick={openMapHandler}>
+              Join Battle!
+            </Button>
             {auth.userId === props.creatorId && (
               <Button to={`/places/${props.id}`}>EDIT</Button>
             )}
@@ -106,6 +109,7 @@ const PlaceItem = props => {
                 DELETE
               </Button>
             )}
+            
           </div>
         </Card>
       </li>
