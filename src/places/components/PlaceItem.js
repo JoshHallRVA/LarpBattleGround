@@ -20,6 +20,10 @@ const PlaceItem = props => {
 
   const closeMapHandler = () => setShowMap(false);
 
+  const openBattleHandler = () => setShowMap(true);
+
+  const closeBattleHandler = () => setShowMap(false);
+
   const showDeleteWarningHandler = () => {
     setShowConfirmModal(true);
   };
@@ -97,7 +101,7 @@ const PlaceItem = props => {
             <Button inverse onClick={openMapHandler}>
               VIEW ON MAP
             </Button>
-            <Button inverse onClick={openMapHandler}>
+            <Button inverse onClick={openBattleHandler}>
               Join Battle!
             </Button>
             {auth.userId === props.creatorId && (
