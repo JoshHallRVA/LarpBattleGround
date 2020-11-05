@@ -125,7 +125,7 @@ const UpdatePlace = () => {
             initialValid={true}
           />
           <Button type="submit" disabled={!formState.isValid}>
-            UPDATE BATTLEGROUND
+            UPDATE PLACE
           </Button>
         </form>
       )}
